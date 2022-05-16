@@ -1,5 +1,5 @@
 <?php
-namespace Lime\sample\Controller\Index;
+namespace Lime\Sample\Controller\Index;
 
 class Test extends \Magento\Framework\App\Action\Action
 {
@@ -13,9 +13,7 @@ class Test extends \Magento\Framework\App\Action\Action
 		return parent::__construct($context);
 	}
 
-	public function execute()
-	{
-		echo "Hello World";
-		exit;
+	public function execute(){
+		return $this->_pageFactory->create();
 	}
 }
